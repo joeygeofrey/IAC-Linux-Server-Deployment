@@ -1,0 +1,26 @@
+Description: >
+    Linux Server Deployment
+
+Resources:
+    SSMAccessRole:
+      Type: "AWS::IAM::Role"
+      Properties:
+    ServerInstanceProfile:
+      Type: "AWS::IAM::InstanceProfile"
+      Properties:
+    WebAccessSecGroup:
+      Type: AWS::EC2::SecurityGroup
+      Properties:
+        GroupDescription: 
+        VpcId:
+          Fn::ImportValue:
+            !Sub "${EnvironmentName}-VPCID"
+        SecurityGroupIngress:
+          - IpProtocol: 
+        SecurityGroupEgress:
+          - IpProtocol: 
+        Tags:
+
+    ServerInstance:
+      Type: AWS::EC2::Instance
+      Properties:
