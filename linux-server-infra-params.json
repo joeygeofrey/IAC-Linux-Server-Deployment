@@ -1,0 +1,10 @@
+[
+    {
+        "ParameterKey": "EnvironmentName",
+        "ParameterValue": "Linux-Server-Deployment"
+    },
+    {
+        "ParameterKey": "AMIToUse",
+        "ParameterValue": "ami-0d593311db5abb72b"
+    }
+]
